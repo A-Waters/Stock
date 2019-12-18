@@ -6,21 +6,31 @@ import pandas as pd
 from pandas.plotting import register_matplotlib_converters
 
 
-
-
-
-
 import trader
 
 register_matplotlib_converters()
-msft = yf.Ticker("MSFT")
-msftHist=msft.history(period="max")
+#msft = yf.Ticker("MSFT")
+#msftHist=msft.history(period="max")
 
-print (msft.info)
+#print (msft.info)
+
+'''
 tradebot = trader.trader()
-tradebot.buy("MSFT" , 1)
 
+tradebot.buy("GE" , 3)
 
+tradebot.printTraderDetails()
+
+GE_STOCKS = tradebot.stocksByName("GE")
+tradebot.sell(GE_STOCKS[0], 2)
+
+tradebot.printTraderDetails()
+
+tradebot.buy("GE" , 2)
+
+GE_STOCKS = tradebot.stocksByName("GE")
+tradebot.sell(GE_STOCKS[1], 2)
+'''
 
 
 #print(msftHist.loc["2000-01-01":"2019-12-16", "Open":"Close"])
