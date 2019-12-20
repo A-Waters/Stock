@@ -1,6 +1,8 @@
 ./__pycache__/Common.cpython-36.pyc
 ./CNN/__pycache__/
-./.vscode/
+./vscode/settings.json
+./.vscode/*
 **.log
 ./logs/
 **.pyc
+.vscode/settings.json

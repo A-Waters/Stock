@@ -57,3 +57,4 @@ class trader:
             print(i, " --Stocks Held = " + str(self.stocks[i][0]) + " --Bought At = " + str(self.stocks[i][1]))
         print()
         print()
+
